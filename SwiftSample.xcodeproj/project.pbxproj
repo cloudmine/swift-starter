@@ -15,6 +15,8 @@
 		AAFEC30F1BD6C83000C7CCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFEC30D1BD6C83000C7CCE4 /* LaunchScreen.storyboard */; };
 		AAFEC31A1BD6C83000C7CCE4 /* SwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3191BD6C83000C7CCE4 /* SwiftSampleTests.swift */; };
 		AAFEC3251BD6C83000C7CCE4 /* SwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3241BD6C83000C7CCE4 /* SwiftSampleUITests.swift */; };
+		AAFEC33A1BD6CCA200C7CCE4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3391BD6CCA200C7CCE4 /* Car.swift */; settings = {ASSET_TAGS = (); }; };
+		E1667C9149714237D6BCBC8F /* libPods-SwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E17AD63882031A971445A2 /* libPods-SwiftSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BAD3CF3D31E1F2F1BEE2011 /* Pods-SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		AAFEC2FF1BD6C83000C7CCE4 /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFEC3021BD6C83000C7CCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFEC3041BD6C83000C7CCE4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		AAFEC3201BD6C83000C7CCE4 /* SwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFEC3241BD6C83000C7CCE4 /* SwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSampleUITests.swift; sourceTree = "<group>"; };
 		AAFEC3261BD6C83000C7CCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFEC3341BD6CC4100C7CCE4 /* SwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAFEC3391BD6CCA200C7CCE4 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		C2E17AD63882031A971445A2 /* libPods-SwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50F95D7B8FFCD3B3A925390 /* Pods-SwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1667C9149714237D6BCBC8F /* libPods-SwiftSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101A8BC075DDDCCC20A36830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2E17AD63882031A971445A2 /* libPods-SwiftSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65A372312815B3B5C725326D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E50F95D7B8FFCD3B3A925390 /* Pods-SwiftSample.debug.xcconfig */,
+				2BAD3CF3D31E1F2F1BEE2011 /* Pods-SwiftSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AAFEC2F61BD6C82F00C7CCE4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				AAFEC3181BD6C83000C7CCE4 /* SwiftSampleTests */,
 				AAFEC3231BD6C83000C7CCE4 /* SwiftSampleUITests */,
 				AAFEC3001BD6C83000C7CCE4 /* Products */,
+				65A372312815B3B5C725326D /* Pods */,
+				101A8BC075DDDCCC20A36830 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +126,10 @@
 		AAFEC3011BD6C83000C7CCE4 /* SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				AAFEC3021BD6C83000C7CCE4 /* AppDelegate.swift */,
-				AAFEC3041BD6C83000C7CCE4 /* MasterViewController.swift */,
-				AAFEC3061BD6C83000C7CCE4 /* DetailViewController.swift */,
-				AAFEC3081BD6C83000C7CCE4 /* Main.storyboard */,
-				AAFEC30B1BD6C83000C7CCE4 /* Assets.xcassets */,
-				AAFEC30D1BD6C83000C7CCE4 /* LaunchScreen.storyboard */,
-				AAFEC3101BD6C83000C7CCE4 /* Info.plist */,
+				AAFEC3351BD6CC6C00C7CCE4 /* App Delegate */,
+				AAFEC3361BD6CC7400C7CCE4 /* Views */,
+				AAFEC3381BD6CC9200C7CCE4 /* Model */,
+				AAFEC3371BD6CC8500C7CCE4 /* Resources */,
 			);
 			path = SwiftSample;
 			sourceTree = "<group>";
@@ -128,6 +152,43 @@
 			path = SwiftSampleUITests;
 			sourceTree = "<group>";
 		};
+		AAFEC3351BD6CC6C00C7CCE4 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEC3021BD6C83000C7CCE4 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		AAFEC3361BD6CC7400C7CCE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEC3041BD6C83000C7CCE4 /* MasterViewController.swift */,
+				AAFEC3061BD6C83000C7CCE4 /* DetailViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AAFEC3371BD6CC8500C7CCE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEC3081BD6C83000C7CCE4 /* Main.storyboard */,
+				AAFEC30B1BD6C83000C7CCE4 /* Assets.xcassets */,
+				AAFEC30D1BD6C83000C7CCE4 /* LaunchScreen.storyboard */,
+				AAFEC3101BD6C83000C7CCE4 /* Info.plist */,
+				AAFEC3341BD6CC4100C7CCE4 /* SwiftSample-Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AAFEC3381BD6CC9200C7CCE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEC3391BD6CCA200C7CCE4 /* Car.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAFEC3291BD6C83000C7CCE4 /* Build configuration list for PBXNativeTarget "SwiftSample" */;
 			buildPhases = (
+				5B9F8840AA386AFBE8722157 /* Check Pods Manifest.lock */,
 				AAFEC2FB1BD6C83000C7CCE4 /* Sources */,
 				AAFEC2FC1BD6C83000C7CCE4 /* Frameworks */,
 				AAFEC2FD1BD6C83000C7CCE4 /* Resources */,
+				562F37C880FFE01A0EB7BEB2 /* Embed Pods Frameworks */,
+				A4FE05E415928730A995B643 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +317,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		562F37C880FFE01A0EB7BEB2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9F8840AA386AFBE8722157 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FE05E415928730A995B643 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAFEC2FB1BD6C83000C7CCE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +372,7 @@
 			files = (
 				AAFEC3071BD6C83000C7CCE4 /* DetailViewController.swift in Sources */,
 				AAFEC3051BD6C83000C7CCE4 /* MasterViewController.swift in Sources */,
+				AAFEC33A1BD6CCA200C7CCE4 /* Car.swift in Sources */,
 				AAFEC3031BD6C83000C7CCE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,23 +511,27 @@
 		};
 		AAFEC32A1BD6C83000C7CCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50F95D7B8FFCD3B3A925390 /* Pods-SwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudmine.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSample/SwiftSample-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		AAFEC32B1BD6C83000C7CCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BAD3CF3D31E1F2F1BEE2011 /* Pods-SwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudmine.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSample/SwiftSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +602,7 @@
 				AAFEC32B1BD6C83000C7CCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAFEC32C1BD6C83000C7CCE4 /* Build configuration list for PBXNativeTarget "SwiftSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +611,7 @@
 				AAFEC32E1BD6C83000C7CCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAFEC32F1BD6C83000C7CCE4 /* Build configuration list for PBXNativeTarget "SwiftSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +620,7 @@
 				AAFEC3311BD6C83000C7CCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
