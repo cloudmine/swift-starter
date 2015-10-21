@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0C2D6E1BD7CF4C001E0113 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C2D6D1BD7CF4C001E0113 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		AAFEC3031BD6C83000C7CCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3021BD6C83000C7CCE4 /* AppDelegate.swift */; };
 		AAFEC3051BD6C83000C7CCE4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3041BD6C83000C7CCE4 /* MasterViewController.swift */; };
 		AAFEC3071BD6C83000C7CCE4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEC3061BD6C83000C7CCE4 /* DetailViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2BAD3CF3D31E1F2F1BEE2011 /* Pods-SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSample/Pods-SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		AA0C2D6D1BD7CF4C001E0113 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AAFEC2FF1BD6C83000C7CCE4 /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFEC3021BD6C83000C7CCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFEC3041BD6C83000C7CCE4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFEC3391BD6CCA200C7CCE4 /* Car.swift */,
+				AA0C2D6D1BD7CF4C001E0113 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				AAFEC3071BD6C83000C7CCE4 /* DetailViewController.swift in Sources */,
 				AAFEC3051BD6C83000C7CCE4 /* MasterViewController.swift in Sources */,
 				AAFEC33A1BD6CCA200C7CCE4 /* Car.swift in Sources */,
+				AA0C2D6E1BD7CF4C001E0113 /* User.swift in Sources */,
 				AAFEC3031BD6C83000C7CCE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
