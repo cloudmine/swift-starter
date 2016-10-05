@@ -23,14 +23,14 @@ class Car: CMObject {
   
   required init!(coder aDecoder: NSCoder!) {
     super.init(coder: aDecoder)
-    self.make = aDecoder.valueForKey("make") as? String
-    self.model = aDecoder.valueForKey("model") as? String
+    self.make = aDecoder.value(forKey: "make") as? String
+    self.model = aDecoder.value(forKey: "model") as? String
   }
   
-  override func encodeWithCoder(aCoder: NSCoder!) {
-    super.encodeWithCoder(aCoder)
-    aCoder.encodeObject(self.make, forKey: "make")
-    aCoder.encodeObject(self.model, forKey: "model")
+  override func encode(with aCoder: NSCoder!) {
+    super.encode(with: aCoder)
+    aCoder.encode(self.make, forKey: "make")
+    aCoder.encode(self.model, forKey: "model")
   }
   
 }
