@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CloudMine
 
 class Car: CMObject {
   

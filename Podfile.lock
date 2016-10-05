@@ -1,36 +1,38 @@
 PODS:
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - CloudMine (1.7.8):
-    - AFNetworking (~> 2.5.4)
-    - MAObjCRuntime (~> 0.0.1)
-  - MAObjCRuntime (0.0.1)
+  - CloudMine (1.7.13):
+    - AFNetworking (~> 2.6.3)
+    - CloudMine/no-arc (= 1.7.13)
+  - CloudMine/no-arc (1.7.13):
+    - AFNetworking (~> 2.6.3)
 
 DEPENDENCIES:
-  - CloudMine
+  - CloudMine (~> 1.7)
 
 SPEC CHECKSUMS:
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  CloudMine: 90ca98d8a4ff2b782ad8633706dd33adc2be560c
-  MAObjCRuntime: a6a1d95acbfa3784d66cb35bd42904e47943b488
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CloudMine: dbf812decc389adf85c188cf80be2d7e1c4ec71c
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 55f5cf6d6659048a88d3b3860c6f83b152db7804
+
+COCOAPODS: 1.0.1

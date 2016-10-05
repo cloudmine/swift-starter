@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+import CloudMine
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
