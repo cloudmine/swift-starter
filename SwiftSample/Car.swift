@@ -10,27 +10,35 @@ import Foundation
 import CloudMine
 
 class Car: CMObject {
-  
-  var make: String?
-  
-  var model: String?
-  
-  init(make: String, model: String) {
-    super.init()
-    self.make = make
-    self.model = model
-  }
-  
-  required init!(coder aDecoder: NSCoder!) {
-    super.init(coder: aDecoder)
-    self.make = aDecoder.value(forKey: "make") as? String
-    self.model = aDecoder.value(forKey: "model") as? String
-  }
-  
-  override func encode(with aCoder: NSCoder!) {
-    super.encode(with: aCoder)
-    aCoder.encode(self.make, forKey: "make")
-    aCoder.encode(self.model, forKey: "model")
-  }
-  
+    dynamic var model: String?
+    dynamic var make: String?
+    dynamic var year: NSNumber?
+    dynamic var currentLocation: CMGeoPoint?
+
+    override init() {
+        super.init()
+    }
+
+    override init(objectId theObjectId: String!) {
+        super.init(objectId: theObjectId)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+
+        make = aDecoder.decodeObject(forKey: "make") as? String
+        model = aDecoder.decodeObject(forKey: "model") as? String
+        year = aDecoder.decodeObject(forKey: "year") as? NSNumber
+        currentLocation = aDecoder.decodeObject(forKey: "currentLocation") as? CMGeoPoint
+    }
+
+    override func encode(with aCoder: NSCoder) {
+        super.encode(with: aCoder)
+
+        aCoder.encode(make, forKey: "make")
+        aCoder.encode(model, forKey: "model")
+        aCoder.encode(year, forKey: "year")
+        aCoder.encode(currentLocation, forKey:"currentLocation")
+    }
 }
+
